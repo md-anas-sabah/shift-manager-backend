@@ -11,6 +11,6 @@ router.route("/updateUser").patch(userService.updateUser);
 router.route("/loginFunc").post(userService.loginFunc);
 router.route("/getUserShifts").post(userService.getUserShifts);
 router.route("/getUserName").post(userService.getUserName);
-// router.route("/getUser").post(userService.getUser);
+
 
 module.exports = router;

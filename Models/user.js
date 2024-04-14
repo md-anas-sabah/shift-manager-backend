@@ -10,9 +10,6 @@ const userSchema = new mongoose.Schema({
   isAdmin: { type: Boolean, required: true },
   shifts: [{ type: mongoose.Types.ObjectId, ref: "Shift" }],
   messages: [{ type: mongoose.Types.ObjectId, ref: "Message" }],
-  // messagesSent: [{type: mongoose.Types.ObjectId, ref: "message"}],
-  // salaryPerHour: { type: Number, required: true},
-  // shiftsPassed: [{type: mongoose.Types.ObjectId, ref: "shiftPassed"}]
 });
 
 module.exports = mongoose.model("User", userSchema);

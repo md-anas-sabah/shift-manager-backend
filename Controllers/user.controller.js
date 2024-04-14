@@ -165,16 +165,6 @@ const getUserName = async (req, res) => {
     return res.status(500).json("Couldn't return user's name");
   }
 };
-// const getUser = async (req, res) => {
-//   try {
-//     const realId = jwt.verify(req.headers.token, process.env.SECRET);
-//     const UserData = await User.findOne({ _id: realId.id });
-//     // console.log(UserData, "This is the user DATA");
-//     return res.status(200).json(UserData);
-//   } catch (err) {
-//     return res.status(500).json(err.message);
-//   }
-// };
 
 module.exports = {
   ping,
@@ -185,5 +175,5 @@ module.exports = {
   loginFunc,
   getUserShifts,
   getUserName,
-  // getUser,
+
 };
