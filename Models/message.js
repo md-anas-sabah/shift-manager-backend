@@ -9,11 +9,4 @@ const messageSchema = new mongoose.Schema({
   to: { type: mongoose.Types.ObjectId, ref: "user" },
 });
 
-// date: "2023-09-07T19:11:23.214Z";
-// content: "Hello little worker";
-// isSendmanAdmin: true;
-// read: true;
-// sendman: "OfekGitam";
-// to: "OfekGitam";
-
 module.exports = mongoose.model("Message", shiftSchema);
